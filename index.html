@@ -10,16 +10,16 @@
   <body>
     <header>
       <div class="bars" onclick="bars()">
-        <div class="bar bar1"></div>
-        <div class="bar bar2"></div>
-        <div class="bar bar3"></div>
+        <div class="bar bar1" id="bar1"></div>
+        <div class="bar bar2" id="bar2"></div>
+        <div class="bar bar3" id="bar3"></div>
       </div>
       <nav>
         <ul id="header_ul">
-          <li><a href="#div1">درباره ما</a></li>
-          <li><a href="#div2">خدمات بهداشتی</a></li>
-          <li><a href="#div3">تجربه</a></li>
-          <li><a href="#div4">تعهد</a></li>
+          <li><a href="#div1" onclick="bars()">درباره ما</a></li>
+          <li><a href="#div2" onclick="bars()">خدمات بهداشتی</a></li>
+          <li><a href="#div3" onclick="bars()">تجربه</a></li>
+          <li><a href="#div4" onclick="bars()">تعهد</a></li>
         </ul>
       </nav>
       <a href="./"><img src="./favicon.ico" alt="" /></a>
@@ -79,6 +79,14 @@
         >
       </div>
     </footer>
+    <script>
+      function bars() {
+        document.getElementById("header_ul").classList.toggle("change");
+        document.getElementById("bar1").classList.toggle("rotate");
+        document.getElementById("bar2").classList.toggle("rotate");
+        document.getElementById("bar3").classList.toggle("rotate");
+      }
+    </script>
     <script src="http://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js
     "></script>
     <script>
@@ -88,13 +96,6 @@
         duration: 400,
       }).setPin("#div2");
       controller.addScene(scene);
-    </script>
-    <script>
-      function bars() {
-        const ul = document
-          .getElementById("header_ul")
-          .classList.toggle("change");
-      }
     </script>
   </body>
 </html>
