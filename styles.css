@@ -25,9 +25,7 @@ header ul {
 }
 header {
   background-color: white;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  position: relative;
 }
 #div1,
 #div2,
@@ -44,6 +42,8 @@ header nav {
 }
 header img {
   margin-left: 20px;
+  float: left;
+  z-index: 100;
 }
 #div1 {
   background-color: black;
@@ -108,6 +108,52 @@ footer {
 .email a {
   color: black;
 }
+
+/* bars */
+.bars {
+  display: none;
+  cursor: pointer;
+}
+.bar {
+  background-color: white;
+  width: 80%;
+  height: 4px;
+}
+.bar1 {
+  transform: translateY(-4px);
+}
+.bar3 {
+  transform: translateY(4px);
+}
+@media screen and (max-width: 500px) {
+  .bars {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    background-color: rgb(109, 108, 108);
+    position: absolute;
+    top: 10px;
+    right: 20px;
+  }
+  header nav ul {
+    display: none;
+    width: 0;
+    height: 0;
+  }
+  .change {
+    display: block;
+  }
+  header nav ul.change {
+    display: block;
+    width: 100vh;
+    height: 100vh;
+    padding-top: 100px;
+  }
+}
+
 /* font face */
 @font-face {
   font-family: Vazirmatn;

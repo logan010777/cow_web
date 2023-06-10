@@ -9,8 +9,13 @@
   </head>
   <body>
     <header>
+      <div class="bars" onclick="bars()">
+        <div class="bar bar1"></div>
+        <div class="bar bar2"></div>
+        <div class="bar bar3"></div>
+      </div>
       <nav>
-        <ul>
+        <ul id="header_ul">
           <li><a href="#div1">درباره ما</a></li>
           <li><a href="#div2">خدمات بهداشتی</a></li>
           <li><a href="#div3">تجربه</a></li>
@@ -83,6 +88,13 @@
         duration: 400,
       }).setPin("#div2");
       controller.addScene(scene);
+    </script>
+    <script>
+      function bars() {
+        const ul = document
+          .getElementById("header_ul")
+          .classList.toggle("change");
+      }
     </script>
   </body>
 </html>
