@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon" />
+    <title>گاو در چمن</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="#div1">درباره ما</a></li>
+          <li><a href="#div2">خدمات بهداشتی</a></li>
+          <li><a href="#div3">تجربه</a></li>
+          <li><a href="#div4">تعهد</a></li>
+        </ul>
+      </nav>
+      <a href="./"><img src="./favicon.ico" alt="" /></a>
+    </header>
+
+    <div id="div1" class="container">
+      <div class="flex">
+        <h1>تجربه‌ای جدید از خدمات دامپروری</h1>
+        <p>
+          ما در شرکت خود با استفاده از تکنولوژی‌های پیشرفته و بهره‌گیری از تجربه
+          و دانش متخصصان خود، خدمات دامپروری با کیفیت بالا را به شما عرضه
+          می‌کنیم. از طریق وبسایت ما می‌توانید با تنوع وسیعی از خدمات دامپروری
+          آشنا شوید و برای پرورش بهتر دام‌های خود از تخصص و تجربه ما بهره‌مند
+          شوید
+        </p>
+      </div>
+    </div>
+    <div id="div2" class="container">
+      <div class="flex">
+        <h1>خدمات بهداشتی برای دام‌های شما</h1>
+        <p>
+          در شرکت ما خدمات بهداشتی دام‌ها شامل واکسیناسیون، درمان بیماری‌های
+          مختلف و حفظ سلامت دام‌های شماست.
+        </p>
+      </div>
+    </div>
+    <div id="div3" class="container">
+      <div class="flex">
+        <h1>تجربه و تخصص در دامپروری</h1>
+        <p>
+          شرکت ما با بیش از دو دهه تجربه در زمینه دامپروری و با دارا بودن تیمی
+          متخصص و مجرب در زمینه بهداشت، تغذیه و پرورش دام‌ها، آمادگی خود را برای
+          ارائه خدمات با کیفیت و متناسب با نیازهای شما اعلام می‌کند.
+        </p>
+      </div>
+    </div>
+    <div id="div4" class="container">
+      <div class="flex">
+        <h1>تعهد ما نسبت به ارزش‌های شما</h1>
+        <p>
+          ر شرکت ما، ارزش‌هایی مانند کیفیت، امنیت، مشارکت و رضایت مشتری در
+          اولویت‌های ما قرار دارد. ما به تعهدات خود در این زمینه پایبندیم و سعی
+          می‌کنیم با ارائه خدمات با کیفیت و متناسب با نیازهای شما، رضایت شما را
+          به دست آوریم
+        </p>
+      </div>
+    </div>
+    <footer>
+      <div class="contact">
+        <h3>شماره تماس &#8675;</h3>
+        <p>08646480000</p>
+      </div>
+      <div class="email">
+        <h4>ایمیل&#9993;</h4>
+        <a href="mailto:www.cowbussiness@yahoo.com"
+          >www.cowbussiness@yahoo.com</a
+        >
+      </div>
+    </footer>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js
+    "></script>
+    <script>
+      var controller = new scrollMagic.controller();
+      var scene = new scrollMagic.scene({
+        offset: 200,
+        duration: 400,
+      }).setPin("#div2");
+      controller.addScene(scene);
+    </script>
+  </body>
+</html>
