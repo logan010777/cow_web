@@ -1,6 +1,7 @@
 body {
   margin: 0;
   background-color: rgba(235, 235, 235, 0.986);
+  overflow-x: hidden;
 }
 * {
   box-sizing: border-box;
@@ -148,7 +149,7 @@ footer {
   }
   header nav ul.change {
     display: block;
-    width: 100%;
+    width: 100vh;
     height: 100vh;
     padding-top: 100px;
   }
