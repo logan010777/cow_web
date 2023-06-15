@@ -7,6 +7,9 @@ body {
   box-sizing: border-box;
   font-family: vazirmatn, serif;
 }
+html {
+  scroll-behavior: smooth;
+}
 header ul a {
   font-size: large;
   color: gray;
