@@ -167,7 +167,9 @@ footer {
   header {
     display: block;
   }
-
+  .aa {
+    width: max-content;
+  }
   header nav ul {
     display: none;
     width: 0;
