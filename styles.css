@@ -60,19 +60,19 @@ header img {
   z-index: 100;
 }
 #div1 {
-  background-color: rgb(70, 70, 70);
-  color: white;
+  background: linear-gradient(to right, #f7971e, #ffd200);
+  color: black;
 }
 #div2 {
-  background-color: white;
-  color: black;
+  background: linear-gradient(to right, #d66d75, #e29587);
+  color: white;
 }
 #div3 {
-  background-color: rgb(223, 199, 132);
-  color: black;
+  background: linear-gradient(to right, #cbb4d4, #20002c);
+  color: white;
 }
 #div4 {
-  background-color: rgb(125, 209, 125);
+  background: linear-gradient(to right, #6190e8, #a7bfe8);
   color: white;
 }
 footer {
@@ -197,7 +197,7 @@ footer {
 .third,
 .fourth {
   opacity: 0;
-  transition: all 0.3s ease;
+  transition: all 1s ease;
 }
 
 .show {
