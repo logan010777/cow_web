@@ -12,7 +12,7 @@ header ul a {
   color: gray;
   padding: 10px 20px;
   text-decoration: none;
-  line-height: 4rem;
+  line-height: 2rem;
 }
 header ul a:hover {
   color: rgb(77, 76, 76);
@@ -23,6 +23,8 @@ header ul {
   padding: 0;
   list-style: none;
   display: flex;
+  justify-content: space-between;
+  align-self: center;
 }
 header {
   background-color: white;
@@ -30,17 +32,13 @@ header {
   margin-bottom: 10px;
   transition: height 0.3s linear;
   display: flex;
-  justify-content: space-between;
+  justify-content: right;
   align-items: center;
   position: sticky;
   top: 0;
   z-index: 99;
 }
-header h1 {
-  display: inline-block;
-  max-width: 350px;
-  text-align: center;
-}
+
 #div1,
 #div2,
 #div3,
@@ -51,13 +49,20 @@ header h1 {
   justify-content: center;
   align-items: center;
 }
-header nav {
-  display: inline-block;
+
+.aa {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  margin: 0 20px;
+  margin-left: 0;
 }
+.aa img {
+  margin-right: 5px;
+}
+
 header img {
   margin-left: 20px;
-  float: left;
-  z-index: 100;
 }
 #div1 {
   background: linear-gradient(to right, #f7971e, #ffd200);
@@ -146,7 +151,7 @@ footer {
   transition: transform 0.3s ease;
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 659px) {
   .bars {
     display: flex;
     flex-direction: column;
@@ -155,9 +160,12 @@ footer {
     width: 30px;
     height: 30px;
     background-color: rgb(109, 108, 108);
-    margin-right: 20px;
     position: absolute;
     top: 32px;
+    left: 20px;
+  }
+  header {
+    display: block;
   }
 
   header nav ul {
@@ -179,6 +187,19 @@ footer {
     height: 100%;
     padding-top: 100px;
   }
+  header nav ul.change li {
+    padding: 20px 20px;
+    width: 100%;
+    cursor: pointer;
+  }
+  header nav ul.change li:hover a {
+    color: white;
+  }
+  header nav ul.change li:hover {
+    background-color: gray;
+    color: white;
+  }
+
   header.change {
     height: 100vh;
   }
