@@ -5,15 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles.css" />
     <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon" />
-    <title>گاو در چمن</title>
+    <title>دام سرویس</title>
   </head>
   <body>
     <header id="header">
-      <div class="bars" onclick="bars()">
+      <div class="bars" onclick="bars()" id="bars">
         <div class="bar bar1" id="bar1"></div>
         <div class="bar bar2" id="bar2"></div>
         <div class="bar bar3" id="bar3"></div>
       </div>
+
       <nav>
         <ul id="header_ul">
           <li><a href="#div1" onclick="bars()">درباره ما</a></li>
@@ -22,12 +23,13 @@
           <li><a href="#div4" onclick="bars()">تعهد</a></li>
         </ul>
       </nav>
+      <h1>دام سرویس</h1>
       <a href="./"><img src="./favicon.ico" alt="" /></a>
     </header>
 
     <div id="div1" class="container">
       <div class="flex">
-        <h1>تجربه‌ای جدید از خدمات دامپروری</h1>
+        <h1 class="">تجربه‌ای جدید از خدمات دامپروری</h1>
         <p>
           ما در شرکت خود با استفاده از تکنولوژی‌های پیشرفته و بهره‌گیری از تجربه
           و دانش متخصصان خود، خدمات دامپروری با کیفیت بالا را به شما عرضه
@@ -37,18 +39,18 @@
         </p>
       </div>
     </div>
-    <div id="div2" class="container">
+    <div id="div2" class="container seconde">
       <div class="flex">
-        <h1>خدمات بهداشتی برای دام‌های شما</h1>
+        <h1 class="titr">خدمات بهداشتی برای دام‌های شما</h1>
         <p>
           در شرکت ما خدمات بهداشتی دام‌ها شامل واکسیناسیون، درمان بیماری‌های
           مختلف و حفظ سلامت دام‌های شماست.
         </p>
       </div>
     </div>
-    <div id="div3" class="container">
+    <div id="div3" class="container third">
       <div class="flex">
-        <h1>تجربه و تخصص در دامپروری</h1>
+        <h1 class="titr">تجربه و تخصص در دامپروری</h1>
         <p>
           شرکت ما با بیش از دو دهه تجربه در زمینه دامپروری و با دارا بودن تیمی
           متخصص و مجرب در زمینه بهداشت، تغذیه و پرورش دام‌ها، آمادگی خود را برای
@@ -56,9 +58,9 @@
         </p>
       </div>
     </div>
-    <div id="div4" class="container">
+    <div id="div4" class="container fourth">
       <div class="flex">
-        <h1>تعهد ما نسبت به ارزش‌های شما</h1>
+        <h1 class="titr">تعهد ما نسبت به ارزش‌های شما</h1>
         <p>
           ر شرکت ما، ارزش‌هایی مانند کیفیت، امنیت، مشارکت و رضایت مشتری در
           اولویت‌های ما قرار دارد. ما به تعهدات خود در این زمینه پایبندیم و سعی
@@ -88,15 +90,9 @@
         document.getElementById("header").classList.toggle("change");
       }
     </script>
-    <script src="http://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js
-    "></script>
-    <script>
-      var controller = new scrollMagic.controller();
-      var scene = new scrollMagic.scene({
-        offset: 200,
-        duration: 400,
-      }).setPin("#div2");
-      controller.addScene(scene);
-    </script>
+
+    <script src="./ScrollMagic.min.js"></script>
+
+    <script src="./main.js"></script>
   </body>
 </html>

@@ -1,6 +1,6 @@
 body {
   margin: 0;
-  background-color: rgba(235, 235, 235, 0.986);
+  /* background-color: rgba(235, 235, 235, 0.986); */
   overflow-x: hidden;
 }
 * {
@@ -27,9 +27,19 @@ header ul {
 header {
   background-color: white;
   position: relative;
-  height: 50px;
   margin-bottom: 10px;
   transition: height 0.3s linear;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 99;
+}
+header h1 {
+  display: inline-block;
+  max-width: 350px;
+  text-align: center;
 }
 #div1,
 #div2,
@@ -145,10 +155,11 @@ footer {
     width: 30px;
     height: 30px;
     background-color: rgb(109, 108, 108);
+    margin-right: 20px;
     position: absolute;
-    top: 10px;
-    right: 20px;
+    top: 32px;
   }
+
   header nav ul {
     display: none;
     width: 0;
@@ -180,6 +191,17 @@ footer {
   .bar3.rotate {
     transform: translateY(-4px) rotate(-45deg);
   }
+}
+/* scroll magic classes */
+.seconde,
+.third,
+.fourth {
+  opacity: 0;
+  transition: all 0.3s ease;
+}
+
+.show {
+  opacity: 1;
 }
 
 /* font face */
